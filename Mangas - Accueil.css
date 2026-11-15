@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url("fd_pc_accueil-manga.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #1761CF;
+}
+
+video {
+    opacity: 0.75;
+    width: 50%;
+}
+
+.btn-mangatheque {
+    display: block;
+    width: 50%;
+    padding: 16px 20px;
+    background-color: #2166D1;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 12px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.25s ease,
+        transform 0.25s ease;
+    opacity: 0.75;
+}
+
+.btn-mangatheque:hover {
+    background-color: #347BE8;
+    transform: translateY(-2px);
+}
+
+.btn-mangatheque:active {
+    transform: scale(0.98);
+}
+
+/*-----------Style signature-foudrebleue------------*/
+.titre-mangatheque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.signature-foudrebleue {
+    width: 32px;
+    height: 40px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 0 5px #36BFFF);
+    animation: foudre 2.5s infinite ease-in-out;
+}
+
+@keyframes foudre {
+
+    0%,
+    85%,
+    100% {
+        opacity: 1;
+        filter: drop-shadow(0 0 5px #36BFFF);
+    }
+
+    90% {
+        opacity: 0.45;
+        filter: drop-shadow(0 0 12px #36BFFF);
+    }
+
+    95% {
+        opacity: 1;
+        filter: drop-shadow(0 0 9px #FFFFFF);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+        gap: 20px;
+        background-image: url("fd_tel_accueil-manga.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: azure;
+    }
+
+    video {
+        width: 100%;
+        opacity: 0.7;
+    }
+
+    .btn-mangatheque {
+        width: 75%;
+    }
+}

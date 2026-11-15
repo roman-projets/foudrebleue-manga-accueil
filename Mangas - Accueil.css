@@ -96,7 +96,7 @@ video {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* flex-direction: column; */
+        flex-direction: column;
         gap: 20px;
         background-image: url("fd_tel_accueil-manga.png");
         background-repeat: no-repeat;
@@ -116,6 +116,6 @@ video {
     }
 
     .btn-mangatheque {
-        width: 75%;
+        width: 85%;
     }
 }
